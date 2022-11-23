@@ -1,16 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
   display: flex;
   flex-direction: column;
-  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  font-family: roboto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: roboto; */
   margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .header,
 .hero {
   background-color: #1f2937;
   color: white;
-  padding: 40px 350px;
+  padding: 40px 200px;
 }
 
 .header {
@@ -75,4 +87,130 @@ button {
 img {
   /* height: auto; */
   width: 400px;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 50px; */
+}
+
+.second-section.title {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  text-align: center;
+  padding: 50px 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 150px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  max-width: 150px;
+  /* gap: 118px; */
+}
+
+.second-section.cards {
+  /* display:flex;  */
+  /* flex-direction: row; */
+  height: 150px;
+  width: 150px;
+  border: #3882f6 solid;
+  border-radius: 10px;
+  color: white;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 80px 300px;
+}
+
+p.utterance {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  margin: 0;
+}
+
+p.author {
+  text-align: right;
+  margin:0;
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.call-action {
+  background-color: white;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.action-card {
+  background-color: #3882f6;
+  color: #f9faf8;
+  /* height: 75px; */
+  /* width: auto; */
+  min-width: 
+  border-radius: 10px;
+  display: flex;
+  justify-content:space-between;
+  padding: 35px 200px;
+  /* flex: 1; */
+  /* gap: 20px; */
+  /* border: 5px solid yellow; */
+}
+
+.action-card.left {
+  display:flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.action-card.title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.action-card.words {
+  padding: 0px;
+  /* align-items: flex-end; */
+  /* vertical-align: bottom; */
+}
+
+
+.button2 {
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  border: white solid;
+  border-radius: 8px;
+  height: fit-content;
+  align-self: center;
+  margin-left: 40px;
+  /* flex: 1; */
+  /* border: 5px solid yellow; */
+}
+
+footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 20px;
 }
